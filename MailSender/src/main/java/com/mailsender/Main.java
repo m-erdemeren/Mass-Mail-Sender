@@ -17,7 +17,7 @@ import javax.mail.internet.MimeMultipart;
 
 @SuppressWarnings("unused")
 public class Main {
-	private static final String filePath = "credentials.txt" ,subject= "İş Başvurusu", bodyPath ="mailBody.txt" , attachFileText = "attachments.txt", toMails = "mails.txt";
+	private static final String filePath = "credentials.txt" ,subject= "SUBJECT", bodyPath ="mailBody.txt" , attachFileText = "attachments.txt", toMails = "mails.txt";
 	public static void main(String[] args) {
 		
 		Properties properties = PropertyBuilder.build();
@@ -31,7 +31,7 @@ public class Main {
             }
         });
 		
-		//session.setDebug(true);
+		
         try {
             // Create a default MimeMessage object.
             MimeMessage message = new MimeMessage(session);
